@@ -1,0 +1,17 @@
+<template>
+  <carousel : data="data" :controls="true"></carousel>
+</template >
+
+  <script>
+    export default {
+      data() {
+    return {
+      data: [
+          '<div class="example-slide">Slide 1</div>',
+          '<div class="example-slide">Slide 2</div>',
+          '<div class="example-slide">Slide 3</div>',
+  ],
+};
+},
+};
+</script>
