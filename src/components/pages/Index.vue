@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: "index",
+  name: "Index",
   data() {
     return {
       msg: "Welcome to Your Vue.js App 1"
