@@ -1,8 +1,38 @@
 @import "./reset";
 @import "./vars";
 
+// Body
 body {
   background: $white;
   width: $container-width;
   margin: $item-centered;
+}
+
+// Header
+.container-logo {
+  padding: 29px 0;
+}
+
+// Slider
+.slider-icon {
+  .slider-icon-left[data-v-d5c2db1a] {
+    border-left: 5px solid #fff !important;
+    border-bottom: 5px solid #fff !important;
+  }
+  .slider-icon-right[data-v-d5c2db1a] {
+    border-left: 5px solid #fff !important;
+    border-bottom: 5px solid #fff !important;
+  }
+}
+.slider {
+  margin: 0 auto;
+  .slider-indicator-icon {
+    margin: 0 10px !important;
+    background-color: #ffffff !important;
+    width: 16px !important;
+    height: 16px !important;
+  }
+  .slider-indicator-active {
+    background-color: #e7ba2f !important;
+  }
 }

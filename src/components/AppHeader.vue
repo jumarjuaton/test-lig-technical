@@ -74,20 +74,7 @@ export default {
 };
 </script>
 
-<style>
-.container-logo {
-  padding: 29px 0;
-}
-.slider {
-  margin: 0 auto;
-}
-.slider .slider-indicator-icon {
-  margin: 0 10px !important;
-  background-color: #ffffff !important;
-  width: 16px !important;
-  height: 16px !important;
-}
-.slider .slider-indicator-active {
-  background-color: #e7ba2f !important;
-}
+<style lang="scss">
+/* global styles */
+@import "../assets/styles/app.scss";
 </style>
