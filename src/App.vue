@@ -1,21 +1,22 @@
 <template>
-  <AppHeader />
+  <div id="app"><Index /></div>
 </template>
 
 <script>
-import Index from "./pages/Index";
-import AppHeader from "./components/AppHeader";
+import Index from "./components/Index";
 
 export default {
   name: "App",
   components: {
-    Index,
-    AppHeader
+    Index
   }
 };
 </script>
 
-<style>
+<style lang="scss">
+/* global styles */
+@import "./assets/styles/app.scss";
+
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
