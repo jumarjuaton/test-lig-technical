@@ -18,7 +18,9 @@ export default {
 @import "./assets/styles/app.scss";
 
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: "游ゴシック体", "Yu-Gothic", "Yu-Gothic-Light", Yu-Gothic,
+    Yu-Gothic-Light, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro",
+    "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
