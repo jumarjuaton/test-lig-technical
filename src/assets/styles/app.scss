@@ -25,10 +25,88 @@ body {
   width: $container-width;
 }
 
+// Section
+section {
+  position: relative;
+  margin: 45px auto 88px;
+  width: $container-width;
+  small {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13pt;
+    color: #999999;
+  }
+  h3 strong {
+    font-size: 18pt;
+    font-weight: bold;
+  }
+  p {
+    font-size: 13pt;
+  }
+}
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+article {
+  width: 720px;
+  float: left;
+}
+aside {
+  padding-top: 20px;
+  background-color: #efefef !important;
+  width: 340px;
+  float: right;
+}
+.title-recommended {
+  font-family: "MS Gothic", Helvetica, sans-serif;
+  font-size: 24pt;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+.list-banner-small {
+  margin-bottom: 16px;
+}
+
+// Sidebar
+
+.sidebar-banner img,
+.sidebar-list {
+  margin-bottom: 40px;
+}
+
+.sidebar-list-details,
+.sidebar-list-img {
+  float: left;
+}
+
+.sidebar-list-details {
+  font-size: 13pt;
+}
+
+.sidebar-list-img img {
+  width: 112px;
+  height: 63px;
+}
+
+.sidebar-list-details p {
+  font-size: 13pt;
+}
+
+.sidebar-list-details small {
+  font-size: 12pt;
+}
+
+.sidebar-list-img img,
+.sidebar-list-details {
+  margin-bottom: 40px;
+}
+
 // Footer
 footer {
   background: $black;
   width: 100%;
+  position: relative;
   .footer__div {
     margin: $item-centered;
     width: $container-width;
@@ -39,7 +117,7 @@ footer {
     float: left;
     > a {
       margin-right: 19px;
-      font-family: "Yu-Gothic", "Yu-Gothic-Light", "MS PGothic", sans-serif;
+      font-family: "Yu-Gothic", "Yu-Gothic-Light", "MS Gothic", sans-serif;
       font-size: 13pt;
       color: white;
       text-align: left;
