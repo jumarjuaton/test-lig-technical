@@ -19,9 +19,6 @@
         :style="i"
       >
         <img width="1400" height="420" src="../assets/images/img-slider.jpg" />
-        <p style="line-height: 280px; font-size: 5rem; text-align: center;">
-          Page{{ index + 1 }}
-        </p>
       </SliderItem>
     </Slider>
   </header>

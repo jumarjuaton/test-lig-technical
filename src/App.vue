@@ -14,13 +14,12 @@ export default {
 </script>
 
 <style lang="scss">
-/* global styles */
+/* app styles */
 @import "./assets/styles/app.scss";
 
 #app {
-  font-family: "游ゴシック体", "Yu-Gothic", "Yu-Gothic-Light", Yu-Gothic,
-    Yu-Gothic-Light, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro",
-    "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: "Yu-Gothic", "Yu-Gothic-Light", Yu-Gothic, Yu-Gothic-Light,
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

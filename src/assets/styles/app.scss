@@ -37,16 +37,20 @@ footer {
   }
   .footer__nav {
     float: left;
-    a {
+    > a {
       margin-right: 19px;
       font-family: "Yu-Gothic", "Yu-Gothic-Light", "MS PGothic", sans-serif;
       font-size: 13pt;
       color: white;
       text-align: left;
       text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
+
 #footer-copyright {
   font-family: Helvetica, "MS PGothic", sans-serif;
   font-size: 14pt;
