@@ -32,15 +32,15 @@ section {
   width: $container-width;
   small {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 13pt;
+    font-size: 17px;
     color: #999999;
   }
   h3 strong {
-    font-size: 18pt;
+    font-size: 24px;
     font-weight: bold;
   }
   p {
-    font-size: 13pt;
+    font-size: 17px;
   }
 }
 section:after {
@@ -58,20 +58,76 @@ aside {
   width: 340px;
   float: right;
 }
-.title-recommended {
+.h3__title--recommended {
   font-family: "MS Gothic", Helvetica, sans-serif;
-  font-size: 24pt;
+  font-size: 32px;
   font-weight: bold;
   letter-spacing: 0.1em;
 }
-.list-banner-small {
-  margin-bottom: 16px;
+
+.article--list-main {
+  width: 720px;
+}
+
+.article--list-main li {
+  list-style-image: url("https://i.ibb.co/Kxp0K3j/img-item.png");
+}
+
+.article--list-main li:hover {
+  list-style-image: url("https://i.ibb.co/3RYGpFG/img-item-hovered.png");
+}
+
+.article--list-main li a,
+.article--list-recommend a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.article--list-main li a:hover h3 {
+  color: #e7ba2f;
+}
+
+.article--list-main li:hover,
+.article--list-main li a:hover,
+.article--list-main h3 li a:hover {
+  cursor: pointer;
+}
+
+.article--list-recommend li {
+  list-style-image: url("https://i.ibb.co/Phrkmkr/img-item-banner-small.png");
+}
+
+button.button-more {
+  display: inline-block;
+  border: none;
+  margin: 0;
+  text-decoration: none;
+  background: #333333;
+  width: 404px;
+  height: 40px;
+  color: #ffffff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20pt;
+  line-height: 1;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button.button-more:hover,
+button.button-more:focus {
+  background: #484747;
+}
+.list-banner--small li {
+  margin-bottom: 18px;
 }
 
 // Sidebar
 
 .sidebar-banner img,
-.sidebar-list {
+.article--list-sidebar {
   margin-bottom: 40px;
 }
 
@@ -81,7 +137,7 @@ aside {
 }
 
 .sidebar-list-details {
-  font-size: 13pt;
+  font-size: 17px;
 }
 
 .sidebar-list-img img {
@@ -90,11 +146,11 @@ aside {
 }
 
 .sidebar-list-details p {
-  font-size: 13pt;
+  font-size: 17px;
 }
 
 .sidebar-list-details small {
-  font-size: 12pt;
+  font-size: 17px;
 }
 
 .sidebar-list-img img,
@@ -118,7 +174,7 @@ footer {
     > a {
       margin-right: 19px;
       font-family: "Yu-Gothic", "Yu-Gothic-Light", "MS Gothic", sans-serif;
-      font-size: 13pt;
+      font-size: 17px;
       color: white;
       text-align: left;
       text-decoration: none;
@@ -131,7 +187,7 @@ footer {
 
 #footer-copyright {
   font-family: Helvetica, "MS PGothic", sans-serif;
-  font-size: 14pt;
+  font-size: 19px;
   color: white;
   text-align: right;
   float: right;

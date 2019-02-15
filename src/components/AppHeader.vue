@@ -1,7 +1,9 @@
 <template>
   <header>
     <div class="header__div-logo">
-      <img width="466" height="72" src="https://i.ibb.co/bKRG5R4/logo.png" />
+      <a href="https://iioffice.liginc.co.jp/cebu/" title="Website Logo"
+        ><img width="466" height="72" src="https://i.ibb.co/bKRG5R4/logo.png"
+      /></a>
     </div>
     <Slider
       width="1400px"
