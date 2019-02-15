@@ -9,7 +9,6 @@
               @mouseover="mouseOver"
               v-show="!active"
               @mouseout="item.hoveredImg = item.defaultImg;"
-              :alt="item.date"
             />
             <small>{{ item.date }}</small>
             <h3>
@@ -37,15 +36,7 @@
       <ul class="sidebar-list">
         <li v-for="n in 3">
           <div v-for="item in SidebarList">
-            <div class="sidebar-list-img">
-              <img
-                :src="item.defaultImg"
-                @mouseover="mouseOver"
-                v-show="!active"
-                @mouseout="item.hoveredImg = item.defaultImg;"
-                :alt="item.date"
-              />
-            </div>
+            <div class="sidebar-list-img"></div>
             <div class="sidebar-list-details">
               <p>{{ item.title }}</p>
               <small>{{ item.date }}</small>
@@ -92,3 +83,57 @@ export default {
   }
 };
 </script>
+<style>
+ul.list-article {
+  width: 720px;
+}
+
+h3 {
+  font: bold 18pt Helvetica, Verdana, sans-serif;
+}
+
+li {
+  list-style-image: url("https://i.ibb.co/Kxp0K3j/img-item.png");
+  padding: 10px;
+  overflow: auto;
+}
+
+li:hover {
+  list-style-image: url("https://i.ibb.co/3RYGpFG/img-item-hovered.png");
+}
+
+li:hover h3 {
+  color: #e7ba2f;
+}
+
+li:hover,
+h3 li:hover {
+  cursor: pointer;
+}
+/* Buttons styles start */
+button {
+  display: inline-block;
+  border: none;
+  margin: 0;
+  text-decoration: none;
+  background: #333333;
+  width: 404px;
+  height: 40px;
+  color: #ffffff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20pt;
+  line-height: 1;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+  background: #484747;
+}
+
+/* Button styles end */
+</style>
