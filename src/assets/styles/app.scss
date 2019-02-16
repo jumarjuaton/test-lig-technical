@@ -18,6 +18,12 @@ body {
   margin: $item-centered;
 }
 
+hr {
+  margin: 0 20px 20px;
+  width: 300px;
+  border: 1px solid #000;
+}
+
 // Header
 .header__div-logo {
   margin: $item-centered;
@@ -31,16 +37,28 @@ section {
   margin: 45px auto 88px;
   width: $container-width;
   small {
+    margin-bottom: 10px;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 17px;
+    font-size: 12px;
     color: #999999;
+    width: 457px;
+    text-align: left;
+    float: left;
   }
-  h3 strong {
-    font-size: 24px;
-    font-weight: bold;
+  h3 {
+    margin-bottom: 10px;
+    strong {
+      line-height: 1.5em;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0.25em;
+    }
   }
   p {
-    font-size: 17px;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1.5em;
+    letter-spacing: 0.5em;
   }
 }
 section:after {
@@ -49,7 +67,6 @@ section:after {
   clear: both;
 }
 article {
-  width: 720px;
   float: left;
 }
 aside {
@@ -58,76 +75,111 @@ aside {
   width: 340px;
   float: right;
 }
-.h3__title--recommended {
+.h3__title--recommended strong {
   font-family: "MS Gothic", Helvetica, sans-serif;
-  font-size: 32px;
+  font-size: 26px;
   font-weight: bold;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.25em;
 }
 
-.article--list-main {
+.article__container {
   width: 720px;
 }
 
-.article--list-main li {
-  list-style-image: url("https://i.ibb.co/Kxp0K3j/img-item.png");
+.article__list-main {
+  margin-left: 263px;
+  li {
+    margin-bottom: 42px;
+    list-style-image: url("https://i.ibb.co/Kxp0K3j/img-item.png");
+    width: 457px;
+    &:hover {
+      list-style-image: url("https://i.ibb.co/3RYGpFG/img-item-hovered.png");
+    }
+  }
 }
 
-.article--list-main li:hover {
-  list-style-image: url("https://i.ibb.co/3RYGpFG/img-item-hovered.png");
+.article__list-recommend {
+  margin-left: 140px;
+  margin-bottom: 40px;
+  float: left;
+  li {
+    margin-bottom: 18px;
+    list-style-image: url("https://i.ibb.co/Phrkmkr/img-item-banner-small.png");
+    width: 166px;
+    float: left;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  p {
+    margin-bottom: 8px;
+    letter-spacing: 0.25em;
+  }
+  small {
+    margin-bottom: 0;
+  }
 }
 
-.article--list-main li a,
-.article--list-recommend a {
+.article__list-main li a,
+.article__list-recommend a {
   color: #000000;
   text-decoration: none;
+  text-align: left;
 }
 
-.article--list-main li a:hover h3 {
+.article__list-main li a:hover h3 {
   color: #e7ba2f;
 }
 
-.article--list-main li:hover,
-.article--list-main li a:hover,
-.article--list-main h3 li a:hover {
+.article__list-main li,
+.article__list-recommend {
+  &:hover,
+  a:hover {
+    cursor: pointer;
+  }
+}
+
+.article__list-main h3 li a:hover {
   cursor: pointer;
 }
 
-.article--list-recommend li {
-  list-style-image: url("https://i.ibb.co/Phrkmkr/img-item-banner-small.png");
-}
-
 button.button-more {
+  background: #333333 url("https://i.ibb.co/wYSDrCd/icon-arrow-font.png")
+    no-repeat 95% 50%;
   display: inline-block;
   border: none;
-  margin: 0;
+  margin: 40px 0 10px;
   text-decoration: none;
-  background: #333333;
   width: 404px;
   height: 40px;
   color: #ffffff;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 20pt;
+  font-size: 20px;
   line-height: 1;
   cursor: pointer;
+  outline: none;
   text-align: center;
   transition: background 250ms ease-in-out, transform 150ms ease;
   -webkit-appearance: none;
   -moz-appearance: none;
+  &:hover,
+  &:focus {
+    background: #484747 url("https://i.ibb.co/wYSDrCd/icon-arrow-font.png")
+      no-repeat 95% 50%;
+  }
 }
 
-button.button-more:hover,
-button.button-more:focus {
-  background: #484747;
-}
-.list-banner--small li {
-  margin-bottom: 18px;
+.list-banner--small {
+  margin-top: 20px;
+  clear: both;
+  li {
+    margin-bottom: 18px;
+  }
 }
 
 // Sidebar
 
-.sidebar-banner img,
-.article--list-sidebar {
+.sidebar-banner img {
   margin-bottom: 40px;
 }
 
@@ -174,7 +226,7 @@ footer {
     > a {
       margin-right: 19px;
       font-family: "Yu-Gothic", "Yu-Gothic-Light", "MS Gothic", sans-serif;
-      font-size: 17px;
+      font-size: 14px;
       color: white;
       text-align: left;
       text-decoration: none;
@@ -187,7 +239,7 @@ footer {
 
 #footer-copyright {
   font-family: Helvetica, "MS PGothic", sans-serif;
-  font-size: 19px;
+  font-size: 14px;
   color: white;
   text-align: right;
   float: right;

@@ -10,6 +10,18 @@
         >
       </nav>
       <div id="footer-copyright">&#169;2016 Sample</div>
+      <BackToTop></BackToTop>
     </div>
   </footer>
 </template>
+
+<script>
+import BackToTop from "./BackToTop.vue";
+
+export default {
+  name: "AppFooter",
+  components: {
+    BackToTop
+  }
+};
+</script>

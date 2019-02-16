@@ -1,7 +1,7 @@
 <template>
   <section>
-    <article>
-      <ul class="article--list-main">
+    <article class="article__container">
+      <ul class="article__list-main">
         <li v-for="n in 10">
           <a
             href="https://iioffice.liginc.co.jp/cebu/"
@@ -10,7 +10,7 @@
           >
             <small>{{ item.dateMain }}</small>
             <h3>
-              <strong>{{ item.title }}</strong>
+              <strong>{{ item.titleMain }}</strong>
             </h3>
             <p>{{ item.excerpt }}</p>
           </a>
@@ -36,15 +36,15 @@
         />
       </a>
       <h3 class="h3__title--recommended"><strong>Recommend</strong></h3>
-      <hr style="margin: 0 20px 20px; border: 2px solid #000;" />
-      <ul class="article--list-recommend">
+      <hr />
+      <ul class="article__list-recommend">
         <li v-for="n in 3">
           <a
             href="https://iioffice.liginc.co.jp/cebu/"
             title="Recommend List"
             v-for="item in ArticleList"
           >
-            <p>{{ item.title }}</p>
+            <p>{{ item.titleBSmall }}</p>
             <small>{{ item.dateBSmall }}</small>
           </a>
         </li>
@@ -68,8 +68,10 @@ export default {
         {
           dateMain: "2016.01.01",
           dateBSmall: "2016.03.26",
-          title:
-            "サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト サンプルテキストサンプルテキスト",
+          titleMain:
+            "サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト",
+          titleBSmall:
+            "サンプルテキストサンプルテキストサンプルテキストサンプルテキスト",
           excerpt:
             "サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト サンプルテキストサンプルテキスト..."
         }
